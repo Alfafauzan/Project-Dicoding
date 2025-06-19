@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h2>Pengertian Function</h2>
+    <p>
+      Apa itu function dan masalah yang dapat dipecahkan oleh function? Mari
+      kita cari tahu bersama-sama! <br />
+      Apakah Anda cukup familier dengan skala suhu, seperti celsius, fahrenheit,
+      kelvin, dan reaumur? Dalam masa belajar di sekolah, kita pasti pernah
+      diajarkan cara melakukan konversi skala suhu. Misalnya, angka suhu
+      berskala celsius diubah menjadi suhu berskala fahrenheit, diubah menjadi
+      suhu berskala reaumur, atau lainnya. Ada rumus yang menjadi panduan
+      perubahannya. Kita ambil satu contoh rumus mengubah skala suhu celsius ke
+      fahrenheit.
+    </p>
+
+    <p>rumus</p>
+    <script>
+      // ini bentuk kalau kita tidak menggunakan function, jika kita memiliki angka 50, 70, 100 pada  celsius maka perhitungan akan menjadi berulang
+      const temperatureInCelsius = 90;
+      const temperatureInFahrenheit = (9 / 5) * temperatureInCelsius + 32;
+
+      console.log("Hasil konversi:", temperatureInFahrenheit);
+
+      //  contoh tanpa function
+      // let temperatureInCelsius;
+      // let temperatureInFahrenheit;
+
+      // temperatureInCelsius = 50;
+      // temperatureInFahrenheit = (9 / 5) * temperatureInCelsius + 32;
+      // console.log("Hasil konversi:", temperatureInFahrenheit); // output -> Hasil konversi: 122
+
+      // temperatureInCelsius = 70;
+      // temperatureInFahrenheit = (9 / 5) * temperatureInCelsius + 32;
+      // console.log("Hasil konversi:", temperatureInFahrenheit); // output -> Hasil konversi: 158
+
+      // temperatureInCelsius = 100;
+      // temperatureInFahrenheit = (9 / 5) * temperatureInCelsius + 32;
+      // console.log("Hasil konversi:", temperatureInFahrenheit); // output -> Hasil konversi: 212
+
+      // funtion = keyword, greetWord() = Identifer, {} = Body
+      function greetword() {
+        console.log("Hello");
+      }
+
+      function convertCelsiusToFahrenheit(temperature) {
+        const temperatureInFahrenheit = (9 / 5) * temperature + 32;
+
+        console.log("Hasil konversi:", temperatureInFahrenheit);
+      }
+    </script>
+  </body>
+</html>
